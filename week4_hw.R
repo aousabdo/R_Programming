@@ -1,0 +1,20 @@
+## Q1
+set.seed(1)
+rpois(5, 2)
+class(rpois(5,2))
+
+## Q5
+set.seed(10)
+x <- rbinom(10, 10, 0.5)
+x
+e <- rnorm(10, 0, 20)
+y <- 0.5 + 2 * x + e
+y
+class(y)
+plot(x, y)
+
+## Q8
+library(datasets)
+Rprof()
+fit <- lm(y ~ x1 + x2)
+Rprof(NULL)
